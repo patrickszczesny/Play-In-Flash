@@ -20,7 +20,11 @@ public class MainActivity extends AppCompatActivity {
         playInFlash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                playInFlashMediaPlayer.start();
+                if( playInFlashMediaPlayer.isPlaying()){
+                    playInFlashMediaPlayer.pause();
+                    playInFlashMediaPlayer.seekTo(0);}
+                else
+                    playInFlashMediaPlayer.start();
             }
         });
     }
