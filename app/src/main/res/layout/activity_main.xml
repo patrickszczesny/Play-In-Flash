@@ -7,14 +7,51 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/playInFlash"
-        android:layout_width="304dp"
-        android:layout_height="445dp"
-        android:text="Play In FLASH!!!"
+        android:id="@+id/careless_whisper"
+        android:layout_width="178dp"
+        android:layout_height="177dp"
+        android:text="Careless Whisper"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/cricket"
+        android:layout_width="178dp"
+        android:layout_height="177dp"
+        android:text="Cricket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <Button
+        android:id="@+id/standing_ovation"
+        android:layout_width="178dp"
+        android:layout_height="177dp"
+        android:text="CLAP - CLAP!!!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <Button
+        android:id="@+id/howl_down"
+        android:layout_width="178dp"
+        android:layout_height="177dp"
+        android:text="BOOOOOO!!!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
 
 </android.support.constraint.ConstraintLayout>

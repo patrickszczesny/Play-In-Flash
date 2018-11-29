@@ -13,19 +13,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final MediaPlayer playInFlashMediaPlayer = MediaPlayer.create(this,R.raw.wham_careless_whisper);
+        final MediaPlayer carelessWhisperMediaPlayer = MediaPlayer.create(this,R.raw.wham_careless_whisper);
+        final MediaPlayer cricketMediaPlayer = MediaPlayer.create(this,R.raw.cricket);
+        final MediaPlayer standingOvationMediaPlayer = MediaPlayer.create(this,R.raw.standing_applause);
+        final MediaPlayer howlDownMediaPlayer = MediaPlayer.create(this,R.raw.boo);
 
-        Button playInFlash =(Button) this.findViewById(R.id.playInFlash);
+        Button carelessWhisperButton =(Button) this.findViewById(R.id.careless_whisper);
+        Button cricketButton =(Button) this.findViewById(R.id.cricket);
+        Button standingOvationButton =(Button) this.findViewById(R.id.standing_ovation);
+        Button howlDownButton =(Button) this.findViewById(R.id.howl_down);
 
-        playInFlash.setOnClickListener(new View.OnClickListener() {
+
+        carelessWhisperButton.setOnClickListener(playStopClick(carelessWhisperMediaPlayer));
+        cricketButton.setOnClickListener(playStopClick(cricketMediaPlayer));
+        standingOvationButton.setOnClickListener(playStopClick(standingOvationMediaPlayer));
+        howlDownButton.setOnClickListener(playStopClick(howlDownMediaPlayer));
+    }
+
+    private View.OnClickListener playStopClick(final MediaPlayer mediaPlayer){
+       return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if( playInFlashMediaPlayer.isPlaying()){
-                    playInFlashMediaPlayer.pause();
-                    playInFlashMediaPlayer.seekTo(0);}
+                if( mediaPlayer.isPlaying()){
+                    mediaPlayer.pause();
+                    mediaPlayer.seekTo(0);}
                 else
-                    playInFlashMediaPlayer.start();
+                    mediaPlayer.start();
             }
-        });
+        };
+
     }
 }
