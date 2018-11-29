@@ -13,7 +13,7 @@ Besides Careless Whispers, you can now also confirm a good idea with a standing 
 1.2
 
 ## To be add
-Secound widget with one button play/stop to make it asap.
+Second widget with one button play/stop to make it asap.
 
-## Informations
-This app is only for education useged. All rights reversed to the artists.
+## Information's
+This app is only for education usage. All rights reversed to the artists.
