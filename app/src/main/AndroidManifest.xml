@@ -20,6 +20,7 @@
         <receiver android:name=".PlayInFlashAppWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="my.package.name.PlayInFlashAppWidgetProvider.ACTION_WIDGET_RECEIVER"/>
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"

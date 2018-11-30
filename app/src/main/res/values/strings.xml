@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PlayMusicInFlash</string>
+    <string name="careless_whisper">Careless Whisper</string>
+    <string name="cricket">Cricket</string>
+    <string name="clap_clap">CLAP - CLAP!!!</string>
+    <string name="boooooo">BOOOOOO!!!</string>
+    <string name="play_flash">Play FLASH</string>
+    <string name="instant_play" />
+    <string name="careless">Careless</string>
+
 </resources>
